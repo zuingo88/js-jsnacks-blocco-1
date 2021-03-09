@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_provajs</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 750px;
+            height: 400px;
+            margin: auto;
+            color: white;
+            background-color: teal;
+            border: solid 2px black;
+            border-radius: 20px;
+            overflow: auto;
+        }
+
+        .pi {
+            transition: all 0.5s;
+        }
+
+        .pi:hover {
+            scale: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="titolo">ciao mondo</h1>
+        <p id="p1" class="pi">tanti saluti</p>
+        <p id="p2" class="pi">tanti saluti</p>
+        <p id="p3" class="pi">tanti saluti</p>
+    </div>
+
+    <script>
+
+        //ESERCIZIO 1____________________________
+
+        // Generatore di "nomi cognomi" casuali: prendendo una 
+        // lista di nomi e una lista di cognomi, Gatsby vuole 
+        // generare una falsa lista di invitati.
+
+        // var names = [ 'ermenegilda', 'calogero', 'lamberto'];
+        // var lastNames = [ 'farlocco', 'inconsueto', 'strampalato'];
+        // var falsaLista = [];
+
+        // for (var i=0; i<5; i++) {
+        //     var namesRnd = names[Math.floor(Math.random() * names.length)];
+        //     var lastNamesRnd = lastNames[Math.floor(Math.random() * lastNames.length)];
+
+        //     var nomeCognome = namesRnd + ' ' + lastNamesRnd;
+
+        //     console.log(nomeCognome);
+        //     falsaLista.push(nomeCognome);
+        // }
+ 
+        // console.log(falsaLista);
+
+
+
+        //ESERCIZIO 2____________________________
+
+        //Crea due array che hanno un numero di elementi diversi. 
+        //Aggiungi elementi all'array che ha meno elementi fino a 
+        //quando ne avrà tanti quanti l'altro.
+
+        // var arr1 = [2, 54, 1, 3, 2];
+        // var arr2 = [8];
+
+        // console.log(arr1);
+        // console.log(arr2);
+
+        // if (arr1.length > arr2.length) {
+        //     var longest = arr1;
+        //     var shortest = arr2; 
+        // } else if (arr1.length < arr2.length) {
+        //     var longest = arr2;
+        //     var shortest = arr1;
+        // } else {
+        //     console.log('sono uguali');
+        //     var longest = arr1;
+        //     var shortest = arr2;
+        // }
+
+        // var diff = longest.length - shortest.length;
+
+        // console.log('la differenza è di', diff, 'elementi');
+        
+        // for (var i = 0; i < diff; i++) {
+        //     var ins = parseInt(prompt('inserire numero'));
+        //     shortest.push(ins);
+        // }
+        
+        // console.log(longest, shortest);
+        
+        
+        
+        
+        //ESERCIZIO 3_____________________________
+
+        // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
+        // finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
+        
+        // var limit = parseInt(prompt('inserire valore limite'));
+        // var valori = [];
+        // var sum = 0;
+
+        // console.log('soglia scelta: ', limit);
+
+        // while (sum < limit) {
+        //     var value = parseInt(prompt('inserire valore limite'));
+        //     valori.push(value);
+        //     sum = sum + value; // sum += value
+        // }
+
+        // console.log('valore raggiunto: ', sum, valori); 
+
+
+
+        //ESERCIZIO 4_____________________________
+
+        // Crea due tag div con due id diversi. 
+        // Un div avrà il testo colorato di rosso mentre l'altro di verde. 
+        // Partendo da un array di numeri, stampiamo nell'id rosso i numeri 
+        // dispari e in verde i numeri pari.
+        
+        // var numbers = [15, 20, 1, 3, 22];
+
+        // var pari = [];
+        // var dispari = [];
+
+        // for (var i = 0; i < numbers.length; i++) {
+        //     if (numbers[i] % 2 == 0) {
+        //             pari.push(numbers[i]);
+        //         }
+        //     else if (numbers[i] % 2 != 0) {
+        //             dispari.push(numbers[i]);
+        //         }
+        //     }
+        // console.log(pari, dispari);
+
+        // document.getElementById('p1').innerHTML = pari;
+        // document.getElementById('p2').innerHTML = dispari;        
+
+    </script>
+
+</body>
+
+</html>
