@@ -153,7 +153,92 @@
         // console.log(pari, dispari);
 
         // document.getElementById('p1').innerHTML = pari;
-        // document.getElementById('p2').innerHTML = dispari;        
+        // document.getElementById('p2').innerHTML = dispari; 
+        
+        
+        //ESERCIZIO 5_____________________________________________________________    
+
+        function init() {
+
+
+                //Creare un oggetto che descriva uno studente con le
+                //seguenti proprietà: nome, cognome e età.Stampare a
+                //schermo attraverso il for in tutte le proprietà.
+
+                var student = {
+                    'name': '',
+                    'surname': '',
+                    'age': '',
+                }
+
+                console.log(student);
+
+                for (var key in student) {
+                    var value = student[key];
+                    console.log(key, value);
+                }
+
+                var students = [
+                    studente = {
+                        'name': 'Amanda',
+                        'surname': 'Frellioje',
+                        'age': '12',
+                    },
+                    studente = {
+                        'name': 'Riccardino',
+                        'surname': 'Fuffolo',
+                        'age': '12',
+                    },
+                    studente = {
+                        'name': 'Billy',
+                        'surname': 'Ballo',
+                        'age': '13',
+                    },
+                    studente = {
+                        'name': 'Ugo',
+                        'surname': 'Tiralaltro',
+                        'age': '11',
+                    },
+                    studente = {
+                        'name': 'Bruno',
+                        'surname': 'Liegibastonliegi',
+                        'age': '36',
+                    },
+                ];
+
+                console.log(students);
+
+                //Creare un array di oggetti di studenti. Ciclare su tutti gli
+                //studenti e stampare per ognuno nome e cognome
+
+                for (var i = 0; i < students.length; i++) {
+
+                    var studentName = students[i].name;
+                    var studentSurname = students[i].surname;
+
+                    console.log(studentName, studentSurname);
+                }
+
+                //Dare la possibilità all'utente attraverso 3 prompt di
+                //aggiungere un nuovo oggetto studente inserendo
+                //nell'ordine: nome, cognome e età.
+
+                var myName = prompt('Inserisci il tuo nome');
+                var mySurname = prompt('Inserisci il tuo cognome');
+                var myAge = prompt('Inserisci la tua età'),
+
+                    student = {
+                        'name': myName,
+                        'surname': mySurname,
+                        'age': myAge,
+                    }
+
+                students.push(student);
+
+                console.log(students);
+            }
+
+            init();
 
     </script>
 
